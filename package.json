@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "worker.js",
   "scripts": {
-    "test": "mocha"
+    "test": ""
   },
   "author": "",
   "license": "ISC",
