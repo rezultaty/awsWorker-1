@@ -145,7 +145,7 @@ var uploadImage = function(image){
     });
 }
 
-var port = process.env.port || 80;
+var port = 80;
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Worker\n');
