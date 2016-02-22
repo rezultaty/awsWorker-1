@@ -1,3 +1,13 @@
 language: node_js
 node_js:
 - '0.10'
+deploy:
+  provider: s3
+  access_key_id: AKIAJUSIYEBHPCRFM4AQ
+  secret_access_key:
+    secure: xd3zDK7rJLMHdQM+Hxj+Ulh7BUWYglAbQVgXwkoMQIHI/7J9tkWVIY7kUQyuuF3UI8GzdeZdgf/vGwSncSZnq47qFQuyl+cNYXZsT40YzrZOfMOZxeCnPXoUY9x0JLJFMpvRx4BZOHv2+xr1xAGgHJTNXxJ5h+gaob0tU4SIw3SFUyXRUoJ/9wC9F+mK0oD0uuLBYlTJdSq42PcoBIHYP7hc0KuKwfr9oLsqgmVs6mHPskqqstWGDwfIwwSompVPJzHv/MbXwypoFjhx09/gaCnu29EGNwhPtJAYpEoVttSrLobFlgMxM2M96CSvk7C9avALIp3yjrt6WxBj0KjBPRSZMqtJaDKMcHOYIac+eVt5+aP/7fLcAhkjbL6ocuFIMptzWzi4KNjY9vVgljXxle4l99WMX3AF9kU0IHXBre45OLxOpB0h4zPP7C8YngYRQGf5qbQP0UzWG3ZR9JCThXDY0rdrMUiGnaayEoZABXpNNudZ1KKrT1wWTE4SUJglzAw6UM2KwMlRjWvJmgDZqaUi8UimY1So63Sdkqd5tuS6WduLE4sc7VIKR1JWiMGmedoO7Y314kJQjY0cwz1b4u/NZKemHadSbxh6hbCW1MrHC1IN9JXSfrqkWarBSx3qCqJeKH8PzvV6E3oO8fZz4on8wSkPeT1x8iHkd3AwcX0=
+  bucket: aandrzejewski
+  upload-dir: aa-App
+  acl: ''
+  on:
+    repo: Pramuspl/awsWorker
