@@ -3,6 +3,7 @@ var app = express();
 var async = require('async');
 var AWS = require('aws-sdk');
 var bucket = "lab4-weeia";
+var http = require('http');
 var lwip=require('lwip');
 var sqsUrl = "https://sqs.us-west-2.amazonaws.com/983680736795/aandrzejewskiSQS";
 var inProgress=false;
