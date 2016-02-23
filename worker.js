@@ -31,10 +31,12 @@ var queueParams = {
 
 async.forever(
     function (next) {
-        if (!inProgress){
-            process.nextTick(receiveMessage);
-        }
-        next();
+        process.nextTick(function(){
+            if (!inProgress){
+                receiveMessage();
+            }
+            next();
+        });
     },
     function () { return true; }
 );
