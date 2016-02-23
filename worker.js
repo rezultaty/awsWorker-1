@@ -31,7 +31,7 @@ var queueParams = {
 
 async.forever(
     function (next) {
-        process.setImmediate(function(){
+        async.setImmediate(function(){
             if (!inProgress){
                 receiveMessage();
             }
